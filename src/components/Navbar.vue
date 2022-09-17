@@ -7,10 +7,9 @@ import { Slide } from "vue3-burger-menu";
 </script>
 
 <template>
-  <nav class="navbar flex flex-row bg-white p-4">
+  <nav class="navbar flex flex-row bg-white p-4 justify-end">
     <Slide
-      class="hamburger-menu grow"
-      id="sm"
+      class="hamburger-menu grow absolute top-0 left-2"
       right
       width="420"
       :closeOnNavigation="true"
@@ -28,7 +27,7 @@ import { Slide } from "vue3-burger-menu";
         <span> <RouterLink to="techstack">TechStack</RouterLink></span>
       </a>
     </Slide>
-    <div class="social-buttons flex flex-row space-x-4 first:pl-2">
+    <div class="social-buttons flex flex-row space-x-4">
       <a target="_blank" href="https://github.com/Khabazbashi"
         ><GithubIcon class="social-icon w-auto h-12 p-2 rounded-full self-end"
       /></a>
@@ -49,7 +48,7 @@ import { Slide } from "vue3-burger-menu";
   </nav>
 </template>
 
-<style scoped>
+<style>
 html {
   height: 100%;
 }
@@ -57,8 +56,6 @@ html {
   position: absolute;
   width: 36px;
   height: 30px;
-  left: 5%;
-  top: 25px;
 }
 .bm-burger-button.hidden {
   display: none;
@@ -121,17 +118,5 @@ html {
 
 .social-icon {
   background-color: var(--color-background);
-}
-/* @media screen and (min-width: 600px) {
-  .app-nav {
-    display: none;
-  }
-} */
-@media (min-width: 1024px) {
-  nav {
-    text-align: right;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-  }
 }
 </style>
