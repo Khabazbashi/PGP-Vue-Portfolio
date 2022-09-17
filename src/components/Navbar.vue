@@ -8,8 +8,20 @@ import { Slide } from "vue3-burger-menu";
 
 <template>
   <nav class="navbar flex flex-row bg-white p-4">
+    <div class="social-buttons flex flex-row space-x-4 first:pl-2">
+      <a target="_blank" href="https://github.com/Khabazbashi"
+        ><GithubIcon class="social-icon w-auto h-12 p-2 rounded-full self-end"
+      /></a>
+      <a target="_blank" href="https://www.linkedin.com/in/sara-k-768537219/"
+        ><LinkedinIcon class="social-icon w-auto h-12 p-2 rounded-full"
+      /></a>
+      <RouterLink to="projects"
+        ><PortfolioIcon class="social-icon w-auto h-12 p-2 rounded-full"
+      /></RouterLink>
+    </div>
+
     <Slide
-      class="hamburger-menu grow grow"
+      class="hamburger-menu"
       id="sm"
       right
       width="420"
@@ -28,28 +40,6 @@ import { Slide } from "vue3-burger-menu";
         <span> <RouterLink to="techstack">TechStack</RouterLink></span>
       </a>
     </Slide>
-    <div class="social-buttons flex flex-row space-x-4 last:pl-2">
-      <a target="_blank" href="https://github.com/Khabazbashi"
-        ><GithubIcon class="social-icon w-auto h-12 p-2 rounded-full self-end"
-      /></a>
-      <a target="_blank" href="https://www.linkedin.com/in/sara-k-768537219/"
-        ><LinkedinIcon class="social-icon w-auto h-12 p-2 rounded-full"
-      /></a>
-      <RouterLink to="projects"
-        ><PortfolioIcon class="social-icon w-auto h-12 p-2 rounded-full"
-      /></RouterLink>
-    </div>
-    <div class="social-buttons flex flex-row space-x-4 last:pl-2">
-      <a target="_blank" href="https://github.com/Khabazbashi"
-        ><GithubIcon class="social-icon w-auto h-12 p-2 rounded-full self-end"
-      /></a>
-      <a target="_blank" href="https://www.linkedin.com/in/sara-k-768537219/"
-        ><LinkedinIcon class="social-icon w-auto h-12 p-2 rounded-full"
-      /></a>
-      <RouterLink to="projects"
-        ><PortfolioIcon class="social-icon w-auto h-12 p-2 rounded-full"
-      /></RouterLink>
-    </div>
 
     <!-- <div class="nav-links flex flex-row my-auto">
       <RouterLink to="/">Home</RouterLink>
@@ -68,7 +58,7 @@ html {
   position: absolute;
   width: 36px;
   height: 30px;
-  left: 5%;
+  left: 85%;
   top: 20px;
 }
 .bm-burger-button.hidden {
