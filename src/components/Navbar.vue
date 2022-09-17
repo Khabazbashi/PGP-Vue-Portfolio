@@ -49,7 +49,7 @@ import { Slide } from "vue3-burger-menu";
   </nav>
 </template>
 
-<style>
+<style scoped>
 html {
   height: 100%;
 }
