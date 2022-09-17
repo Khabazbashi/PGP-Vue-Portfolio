@@ -1,13 +1,12 @@
 <script setup>
-import Section from "../components/MainSections.vue";
+import Section from "../components/Section.vue";
 </script>
 
 <template>
   <div class="techstack">
     <Section
-      title="TECHNICAL SKILLS"
-      contentType="stack"
-      :contents="[
+      :main="{ title: 'TECHNICAL SKILLS', info: '' }"
+      :content="[
         {
           subtitle: 'General',
           images: [
@@ -17,7 +16,11 @@ import Section from "../components/MainSections.vue";
           ],
           bullets: ['C#/.NET', 'JavaScript'],
         },
-
+      ]"
+    />
+    <Section
+      :main="{ title: null, info: null }"
+      :content="[
         {
           subtitle: 'Frontend',
           images: [
@@ -36,6 +39,11 @@ import Section from "../components/MainSections.vue";
             'Razor Pages',
           ],
         },
+      ]"
+    />
+    <Section
+      :main="{ title: null, info: null }"
+      :content="[
         {
           subtitle: 'Backend',
           images: [
@@ -59,6 +67,11 @@ import Section from "../components/MainSections.vue";
             'R',
           ],
         },
+      ]"
+    />
+    <Section
+      :main="{ title: null, info: null }"
+      :content="[
         {
           subtitle: 'Tools & technologies',
           images: [
