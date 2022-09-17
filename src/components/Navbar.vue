@@ -9,7 +9,7 @@ import { Slide } from "vue3-burger-menu";
 <template>
   <nav class="navbar flex flex-row bg-white p-4 justify-end">
     <Slide
-      class="hamburger-menu grow absolute top-0 left-2"
+      class="hamburger-menu grow"
       right
       width="420"
       :closeOnNavigation="true"
@@ -56,6 +56,8 @@ html {
   position: absolute;
   width: 36px;
   height: 30px;
+  left: 5% !important;
+  top: 22px !important;
 }
 .bm-burger-button.hidden {
   display: none;
