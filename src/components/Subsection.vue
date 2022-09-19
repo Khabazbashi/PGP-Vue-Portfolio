@@ -33,7 +33,10 @@ export default {
       >
     </div>
 
-    <div v-if="data.images" class="grid grid-cols-3 gap-3 md:gap-5 mt-4 mb-10">
+    <div
+      v-if="data.images"
+      class="grid grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5 mt-4 mb-10"
+    >
       <div
         class="img__container flex md:p-5"
         v-for="(ts, index) in data.images"

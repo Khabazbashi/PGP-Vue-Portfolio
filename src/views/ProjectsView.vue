@@ -8,6 +8,12 @@ import Section from "../components/Section.vue";
     :main="{ title: 'PROJECTS' }"
     :content="[
       {
+        subtitle: 'Portfolio',
+        link: 'https://adda-portfolio.vercel.app/',
+        description:
+          'My personal portfolio used to display my work. The application is hosted on Vercel and built using Vue with a mobile first approach. At the moment offering strictly client side front-end but the plan is to continuously update and improve the design and functionality of the application.',
+      },
+      {
         subtitle: 'Invitation to Wedding',
         link: 'https://wedding-invitation-iota.vercel.app/',
         description:
