@@ -22,5 +22,3 @@ import Section from "../components/Section.vue";
     ]"
   />
 </template>
-
-<style scoped></style>

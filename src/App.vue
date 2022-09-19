@@ -5,7 +5,7 @@ import navbar from "./components/Navbar.vue";
 
 <template>
   <navbar />
-  <RouterView id="app-main" class="flex flex-col m-h-full grow lg:max-w-7xl" />
+  <RouterView id="app-main" class="flex flex-col m-h-full grow" />
 </template>
 
 <style scoped>

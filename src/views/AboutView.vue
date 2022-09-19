@@ -5,9 +5,7 @@ import Section from "../components/Section.vue";
 <template>
   <div class="about">
     <Section
-      :main="{
-        title: 'EDUCATION',
-      }"
+      :main="{ title: 'EDUCATION' }"
       :content="[
         {
           subtitle:
@@ -51,13 +49,3 @@ import Section from "../components/Section.vue";
     />
   </div>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>

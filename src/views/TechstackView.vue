@@ -114,9 +114,3 @@ import Section from "../components/Section.vue";
     />
   </div>
 </template>
-
-<style scoped>
-.techstack {
-  background-color: #ededed;
-}
-</style>
