@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="subsection first:mt-20 last:mb-20 my-9">
+  <div class="subsection first:mt-20 last:mb-20 my-9 max-w-xl mx-auto">
     <h3 class="text-xl font-semibold">{{ data.subtitle }}</h3>
 
     <div v-if="data.date">
@@ -33,9 +33,9 @@ export default {
       >
     </div>
 
-    <div v-if="data.images" class="grid grid-cols-3 gap-3 mt-4 mb-10">
+    <div v-if="data.images" class="grid grid-cols-3 gap-3 md:gap-5 mt-4 mb-10">
       <div
-        class="img__container"
+        class="img__container flex md:p-5"
         v-for="(ts, index) in data.images"
         v-bind:key="index"
       >

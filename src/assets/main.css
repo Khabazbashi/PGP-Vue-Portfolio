@@ -1,17 +1,20 @@
 @import "./base.css";
-@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap");
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
 
 #app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: auto 0;
-}
-
-@media (hover: hover) {
-  a:hover {
-  }
 }
 
 @media (min-width: 1024px) {
@@ -28,3 +31,8 @@
     min-height: 100vh;
   }
 }
+
+/* @media (hover: hover) {
+  a:hover {
+  }
+} */

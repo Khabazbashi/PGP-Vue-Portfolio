@@ -1,8 +1,4 @@
-<script setup>
-import GithubIcon from "@/components/icons/IconGithub.vue";
-import LinkedinIcon from "@/components/icons/IconLinkedin.vue";
-import PortfolioIcon from "@/components/icons/IconPortfolio.vue";
-</script>
+<script setup></script>
 
 <template>
   <div class="home flex flex-col justify-center m-9 max-h-[77%]">
