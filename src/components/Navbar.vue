@@ -9,7 +9,7 @@ import { Slide } from "vue3-burger-menu";
 <template>
   <nav class="navbar flex flex-row bg-white p-4 justify-end">
     <Slide
-      class="hamburger-menu grow"
+      class="hamburger-menu grow lg:hidden"
       right
       width="420"
       :closeOnNavigation="true"
@@ -27,6 +27,14 @@ import { Slide } from "vue3-burger-menu";
         <span> <RouterLink to="techstack">TechStack</RouterLink></span>
       </a>
     </Slide>
+
+    <div class="nav-links flex flex-row my-auto hidden">
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="about">About</RouterLink>
+      <RouterLink to="projects">Projects</RouterLink>
+      <RouterLink to="techstack">TechStack</RouterLink>
+    </div>
+
     <div class="social-buttons flex flex-row space-x-4">
       <a target="_blank" href="https://github.com/Khabazbashi"
         ><GithubIcon class="social-icon w-auto h-12 p-2 rounded-full self-end"
@@ -38,13 +46,6 @@ import { Slide } from "vue3-burger-menu";
         ><PortfolioIcon class="social-icon w-auto h-12 p-2 rounded-full"
       /></RouterLink>
     </div>
-
-    <!-- <div class="nav-links flex flex-row my-auto">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="about">About</RouterLink>
-      <RouterLink to="projects">Projects</RouterLink>
-      <RouterLink to="techstack">TechStack</RouterLink>
-    </div> -->
   </nav>
 </template>
 

@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="subsection first:mt-20 last:mb-20 my-9 max-w-xl mx-auto">
+  <div class="subsection first:mt-20 last:mb-20 my-9">
     <h3 class="text-xl font-semibold">{{ data.subtitle }}</h3>
 
     <div v-if="data.date">

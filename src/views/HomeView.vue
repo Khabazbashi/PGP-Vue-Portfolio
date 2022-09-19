@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <div class="home flex flex-col justify-center m-9 max-h-[77%]">
+  <div
+    class="home flex flex-col justify-center m-9 max-h-[77%] md:max-w-[77%] md:mx-auto"
+  >
     <h1 class="hello text-5xl mb-[8%]">Hello<span id="blink">_</span></h1>
     <p
       class="about flex text-xl leading-tight leading-7 text-justify break-words mb-[12%]"
