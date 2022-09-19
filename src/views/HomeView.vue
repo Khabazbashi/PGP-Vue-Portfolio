@@ -4,7 +4,7 @@
   <div
     class="home flex flex-col justify-center m-9 max-h-[77%] lg:max-w-[65%] lg:m-auto lg:place-items-center"
   >
-    <h1 class="hello text-5xl mb-[8%]">Hello<span id="blink">_</span></h1>
+    <h1 class="hello text-5xl my-[8%]">Hello<span id="blink">_</span></h1>
     <p
       class="about flex text-xl lg:text-2xl leading-tight leading-7 text-justify lg:text-center break-words mb-[12%] lg:w-[50%]"
     >
