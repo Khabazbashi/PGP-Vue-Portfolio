@@ -7,7 +7,7 @@ import { Slide } from "vue3-burger-menu";
 </script>
 
 <template>
-  <nav class="navbar flex flex-row bg-white p-4 justify-end">
+  <nav class="navbar flex flex-row bg-white p-4 mx-auto w-full">
     <Slide
       class="hamburger-menu grow lg:hidden"
       right
@@ -28,14 +28,16 @@ import { Slide } from "vue3-burger-menu";
       </a>
     </Slide>
 
-    <div class="nav-links flex flex-row my-auto hidden">
+    <div
+      class="nav-links hidden lg:flex flex-row text-lg my-auto ml-5 space-x-10 grow"
+    >
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="about">About</RouterLink>
       <RouterLink to="projects">Projects</RouterLink>
       <RouterLink to="techstack">TechStack</RouterLink>
     </div>
 
-    <div class="social-buttons flex flex-row space-x-4">
+    <div class="social-buttons flex flex-row space-x-4 float-right">
       <a target="_blank" href="https://github.com/Khabazbashi"
         ><GithubIcon class="social-icon w-auto h-12 p-2 rounded-full self-end"
       /></a>
