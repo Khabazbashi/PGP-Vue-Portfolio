@@ -5,17 +5,18 @@ import PortfolioIcon from "@/components/icons/IconPortfolio.vue";
 </script>
 
 <template>
-  <div class="home flex flex-col m-9">
-    <h1 class="hello text-5xl mt-24">Hello<span id="blink">_</span></h1>
+  <div class="home flex flex-col justify-center m-9 max-h-[77%]">
+    <h1 class="hello text-5xl mb-[8%]">Hello<span id="blink">_</span></h1>
     <p
-      class="about flex grow text-2xl leading-tight text-justify break-words my-9"
+      class="about flex text-xl leading-tight leading-7 text-justify break-words mb-[12%]"
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nam
-      eligendi quam mollitia minima deserunt, ad doloribus esse iste velit.
+      I’m a Full-Stack .NET Developer from Stockholm. I love creative problem
+      solving, building websites and mobile applications. I am always looking to
+      learn new skills and develop my abilities.
     </p>
-    <div class="flex h-2/5 w-auto m-16 place-content-center grayscale">
+    <div class="flex w-auto place-content-center grayscale h-56 mb-[16%]">
       <img
-        class="rounded-full shadow-lg object-contain"
+        class="rounded-full object-contain"
         alt="Picture of me"
         src="@/assets/adda.png"
       />
