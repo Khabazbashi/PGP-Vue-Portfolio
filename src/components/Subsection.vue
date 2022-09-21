@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="subsection first:mt-20 last:mb-20 my-9">
+  <div class="subsection first:mt-10 last:mb-10 my-9 lg:first:my-10">
     <h3 class="text-xl font-semibold">{{ data.subtitle }}</h3>
 
     <div v-if="data.date">
@@ -47,10 +47,10 @@ export default {
     </div>
 
     <div class="flex flex-col" v-if="data.bullets">
-      <button class="w-10 mx-auto mt-5 mb-10" @click="isShow = !isShow">
+      <button class="w-10 mx-auto" @click="isShow = !isShow">
         <img alt="Expand" src="../assets/expand.png" />
       </button>
-      <div v-if="isShow">
+      <div class="p-5" v-if="isShow">
         <ul v-for="(tst, index) in data.bullets" :key="index">
           <li class="text-center">{{ tst }}</li>
         </ul>

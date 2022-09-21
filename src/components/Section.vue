@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="main flex grow flex-col lg:place-items-center">
+  <div class="main flex grow flex-col my-20 lg:place-items-center">
     <div v-if="main.title" class="main__header flex flex-col text-center">
       <h1 class="main__title text-5xl mt-36 mb-10 mx-9">{{ main.title }}</h1>
       <p class="main__info text-lg mx-9 mb-32">{{ main.info }}</p>

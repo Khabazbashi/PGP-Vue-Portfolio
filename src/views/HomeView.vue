@@ -2,18 +2,18 @@
 
 <template>
   <div
-    class="home flex flex-col justify-center m-9 max-h-[77%] lg:max-w-[65%] lg:m-auto lg:place-items-center"
+    class="home flex flex-col justify-center m-9 max-h-[77%] lg:max-w-[100%] lg:m-auto lg:place-items-center"
   >
-    <h1 class="hello text-5xl mb-[8%] lg:mt-[8%]">
+    <h1 class="hello text-7xl mb-[6%] lg:mt-[8%]">
       Hello<span id="blink">_</span>
     </h1>
     <p
-      class="about flex text-xl lg:text-2xl leading-tight leading-7 text-justify lg:text-center break-words mb-[12%] lg:w-[50%]"
+      class="about flex text-xl lg:text-2xl leading-tight leading-7 text-justify lg:text-center break-words mb-[12%] lg:w-[55%]"
     >
       My name is Sara and I'm a Full-Stack .NET Developer from Stockholm. My
-      primary field is .NET Core and C#, but I have experience with several
-      other tools and technologies as well. I am always open to learning new
-      skills and I enjoy a good challenge and the opportunity to be creative.
+      main area is .NET Core and C#, but I have experience with several other
+      tools and technologies as well. I am always open to learning new skills
+      and I enjoy a good challenge and the opportunity to be creative.
     </p>
     <div class="flex w-auto place-content-center grayscale h-56 mb-[16%]">
       <img
