@@ -44,9 +44,9 @@ import { Slide } from "vue3-burger-menu";
       <a target="_blank" href="https://www.linkedin.com/in/sara-k-768537219/"
         ><LinkedinIcon class="social-icon w-auto h-12 p-2 rounded-full"
       /></a>
-      <RouterLink to="projects"
+      <a target="_blank" href="mailto:sara.khabazbashi@appliedtechnology.se"
         ><PortfolioIcon class="social-icon w-auto h-12 p-2 rounded-full"
-      /></RouterLink>
+      /></a>
     </div>
   </nav>
 </template>
