@@ -10,7 +10,7 @@ import Section from "../components/Section.vue";
         {
           subtitle: 'General',
           images: [
-            'https://i.imgur.com/T8bpBvi.png',
+            'https://i.imgur.com/FV9bGuI.png',
             'https://i.imgur.com/AkF7wwX.png',
             'https://i.imgur.com/XlBhL8r.png',
           ],
@@ -52,7 +52,7 @@ import Section from "../components/Section.vue";
             'https://i.imgur.com/4R5h5mh.png',
             'https://i.imgur.com/3ewyYsv.pngs',
             'https://i.imgur.com/LjcMIjZ.jpg',
-            'https://i.imgur.com/mM3TT4k.png',
+            'https://i.imgur.com/DGspkuq.png',
             'https://i.imgur.com/LZpYB17.png',
             'https://i.imgur.com/PSVDtf3.png',
           ],
@@ -85,7 +85,7 @@ import Section from "../components/Section.vue";
             'https://i.imgur.com/C6bA2gH.png',
             'https://i.imgur.com/cdQVaxK.pngs',
             'https://i.imgur.com/2qI5iej.png',
-            'https://i.imgur.com/lEinrwi.pngs',
+            'https://i.imgur.com/S2d8YGC.png',
             'https://i.imgur.com/RpZfluP.png',
           ],
           bullets: [
