@@ -40,7 +40,7 @@ export default {
       <div
         class="img__container flex md:p-5"
         v-for="(ts, index) in data.images"
-        v-bind:key="index"
+        :key="index"
       >
         <img :src="ts" />
       </div>
@@ -48,7 +48,7 @@ export default {
 
     <div class="flex flex-col" v-if="data.bullets">
       <button class="w-10 mx-auto mt-5 mb-10" @click="isShow = !isShow">
-        <img alt="Expand" src="@/assets/expand.png" />
+        <img alt="Expand" src="../assets/expand.png" />
       </button>
       <div v-if="isShow">
         <ul v-for="(tst, index) in data.bullets" :key="index">

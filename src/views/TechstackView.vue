@@ -5,16 +5,16 @@ import Section from "../components/Section.vue";
 <template>
   <div class="techstack">
     <Section
-      :main="{ title: 'TECHNICAL SKILLS', info: '' }"
+      :main="{ title: 'SKILLS', info: '' }"
       :content="[
         {
           subtitle: 'General',
           images: [
-            'https://www.freeiconspng.com/uploads/c-logo-icon-18.png',
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png',
-            'data:image/png;base64,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',
+            'https://i.imgur.com/T8bpBvi.png',
+            'https://i.imgur.com/AkF7wwX.png',
+            'https://i.imgur.com/XlBhL8r.png',
           ],
-          bullets: ['C#/.NET', 'JavaScript'],
+          bullets: ['C#', '.NET', 'JavaScript'],
         },
       ]"
     />
@@ -24,11 +24,11 @@ import Section from "../components/Section.vue";
         {
           subtitle: 'Frontend',
           images: [
-            'https://cdn-icons-png.flaticon.com/512/732/732212.png',
-            'https://cdn-icons-png.flaticon.com/512/732/732190.png',
-            'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
-            'https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png',
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png',
+            'https://i.imgur.com/oPr12pv.png',
+            'https://i.imgur.com/krVgT6g.png',
+            'https://i.imgur.com/R0Klr0O.png',
+            'https://i.imgur.com/tyxw1w4.png',
+            'https://i.imgur.com/f7Pvt9O.png',
           ],
           bullets: [
             'Html',
@@ -47,14 +47,14 @@ import Section from "../components/Section.vue";
         {
           subtitle: 'Backend',
           images: [
-            'https://nexwebsites.com/images/service/microsoft.net-development-services.png',
-            'https://img.icons8.com/color/480/microsoft-sql-server.png',
-            'https://plugins.jetbrains.com/files/18147/209295/icon/pluginIcon.svg',
-            'https://the-guild.dev/blog-assets/nodejs-esm/nodejs_logo.png',
-            'https://icon-library.com/images/icon-api/icon-api-9.jpg',
-            'https://www.svgrepo.com/show/327408/logo-vercel.svg',
-            'https://cdn.iconscout.com/icon/free/png-256/heroku-10-1175213.png',
-            'https://play-lh.googleusercontent.com/UeiCnTGunCg4qcuBpFoVqG1DgJZqDsnW2CfY5lldp5ZfcQfr65yKTD53V7ug0kaV48g',
+            'https://i.imgur.com/aqr9aOI.png',
+            'https://i.imgur.com/CnYcu2X.png',
+            'https://i.imgur.com/4R5h5mh.png',
+            'https://i.imgur.com/3ewyYsv.pngs',
+            'https://i.imgur.com/LjcMIjZ.jpg',
+            'https://i.imgur.com/mM3TT4k.png',
+            'https://i.imgur.com/LZpYB17.png',
+            'https://i.imgur.com/PSVDtf3.png',
           ],
           bullets: [
             'ASP.NET/MVC',
@@ -75,22 +75,18 @@ import Section from "../components/Section.vue";
         {
           subtitle: 'Tools & technologies',
           images: [
-            'https://cdn-icons-png.flaticon.com/512/873/873107.png',
-            'https://www.mssqlgirl.com/wp-content/uploads/2020/02/AzureDataStudioLogo.png',
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png',
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Visual_Studio_Icon_2019.svg/2060px-Visual_Studio_Icon_2019.svg.png',
-            'https://www.alfasoft.com/images/products/jetbrains/Images/icon/icon_rider.png',
-            'https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png',
-            'https://miro.medium.com/max/600/1*RQwRLQ0yyCvYmRn_Nst5yg.png',
-            'https://camo.githubusercontent.com/58045a79a69afea4cab1cea6def6d911fba3956cf5fd683addf41c032aa64088/68747470733a2f2f636c6475702e636f6d2f78465646784f696f41552e737667',
-            'https://www.nuget.org/profiles/xunit/avatar?imageSize=512',
-            'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
-            'https://cdn-icons-png.flaticon.com/512/6124/6124991.png',
-            'https://plugins.jetbrains.com/files/18580/161514/icon/pluginIcon.svg',
-            'https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360',
-            'https://static.thenounproject.com/png/106175-200.png',
-            'https://media.istockphoto.com/vectors/agile-icon-vector-id959651186?k=20&m=959651186&s=170667a&w=0&h=N_aqX6s74Z8xvTFyxE_4RWJm0lECq-45HtoqWxVf1w0=',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqmWwnajacB3RVGmp3WaO6kCQ1rksfVY9cw&usqp=CAU',
+            'https://i.imgur.com/DOuRecZ.png',
+            'https://i.imgur.com/PAshpFC.png',
+            'https://i.imgur.com/G4nMova.png',
+            'https://i.imgur.com/YS06ztj.png',
+            'https://i.imgur.com/XTPbmX7.png',
+            'https://i.imgur.com/VWyn82M.png',
+            'https://i.imgur.com/88KOoHw.png',
+            'https://i.imgur.com/C6bA2gH.png',
+            'https://i.imgur.com/cdQVaxK.pngs',
+            'https://i.imgur.com/2qI5iej.png',
+            'https://i.imgur.com/lEinrwi.pngs',
+            'https://i.imgur.com/RpZfluP.png',
           ],
           bullets: [
             'Azure',
