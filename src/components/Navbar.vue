@@ -24,17 +24,17 @@ import { Slide } from "vue3-burger-menu";
         <span> <RouterLink to="projects">Projects</RouterLink></span>
       </a>
       <a>
-        <span> <RouterLink to="techstack">TechStack</RouterLink></span>
+        <span> <RouterLink to="techstack">Skills</RouterLink></span>
       </a>
     </Slide>
 
     <div
-      class="nav-links hidden lg:flex flex-row text-lg my-auto ml-5 space-x-10 grow"
+      class="nav-links hidden lg:flex flex-row text-xl my-auto ml-5 space-x-10 grow"
     >
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="about">About</RouterLink>
       <RouterLink to="projects">Projects</RouterLink>
-      <RouterLink to="techstack">TechStack</RouterLink>
+      <RouterLink to="techstack">Skills</RouterLink>
     </div>
 
     <div class="social-buttons flex flex-row space-x-4 float-right">
@@ -44,9 +44,9 @@ import { Slide } from "vue3-burger-menu";
       <a target="_blank" href="https://www.linkedin.com/in/sara-k-768537219/"
         ><LinkedinIcon class="social-icon w-auto h-12 p-2 rounded-full"
       /></a>
-      <RouterLink to="projects"
+      <a target="_blank" href="mailto:sara.khabazbashi@appliedtechnology.se"
         ><PortfolioIcon class="social-icon w-auto h-12 p-2 rounded-full"
-      /></RouterLink>
+      /></a>
     </div>
   </nav>
 </template>
