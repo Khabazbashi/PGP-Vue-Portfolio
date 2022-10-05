@@ -10,8 +10,8 @@ import { Slide } from "vue3-burger-menu";
 up button //TODO add color to icons
 
 <template>
-  <nav class="navbar flex flex-row text-black p-4 mx-auto w-full">
-    <!-- <Slide
+  <nav class="navbar flex flex-row text-black p-4 mx-auto w-full transparent">
+    <Slide
       class="hamburger-menu grow lg:hidden"
       right
       width="420"
@@ -20,7 +20,7 @@ up button //TODO add color to icons
       <a>
         <span> <RouterLink to="/">Home</RouterLink></span>
       </a>
-    
+
       <a>
         <span> <RouterLink to="about">About</RouterLink></span>
       </a>
@@ -28,19 +28,18 @@ up button //TODO add color to icons
         <span> <RouterLink to="projects">Projects</RouterLink></span>
       </a>
       <a>
-        <span> <RouterLink to="techstack">Skills</RouterLink></span>
+        <span> <RouterLink to="contact">Contact</RouterLink></span>
       </a>
-    </Slide> -->
-    <div
-      class="nav-links hidden lg:flex flex-row text-xl my-auto ml-16 space-x-10 grow"
-    >
+    </Slide>
+    <div class="hidden lg:flex flex-row text-xl my-auto ml-16 space-x-10 grow">
       <p style="font-family: 'Raleway', sans-serif; font-size: 25px">
         Sara Khabazbashi
       </p>
     </div>
+
     <div
       style="font-family: 'Work Sans', sans-serif; font-size: 25px"
-      class="nav-links flex flex-row space-x-4 text-xl my-auto float-right mr-16"
+      class="hidden lg:flex flex-row space-x-4 text-xl my-auto float-right mr-16"
     >
       <a href="#home">HOME</a>
       <a href="#about">ABOUT</a>

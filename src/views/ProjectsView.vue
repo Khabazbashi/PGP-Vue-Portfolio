@@ -9,13 +9,15 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col items-center min-h-[100%] bg-[#1b191a]">
-    <div class="w-[60%]">
+  <div
+    class="flex flex-col items-center min-h-[100%] bg-[#1b191a] px-10 md:px-20"
+  >
+    <div class="lg:w-[60%]">
       <h1 class="text-5xl mt-20 mb-[15%] font-bold text-center">
         {{ projects.title }}
       </h1>
       <div>
-        <div class="grid grid-cols-2 gap-20 my-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 my-16">
           <div
             class="flex flex-col"
             v-for="(item, index) in projects.items"

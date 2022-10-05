@@ -16,9 +16,9 @@ export default {
 
 <template>
   <div class="flex flex-col items-center min-h-[100%] py-10 bg-[#946268]">
-    <div class="w-[50%]">
+    <div class="lg:w-[50%]">
       <div class="mb-20">
-        <h1 class="text-5xl mt-20 mb-5 font-bold text-center">
+        <h1 class="text-5xl md:mt-20 mb-5 font-bold text-center">
           {{ about.title }}
         </h1>
         <p
@@ -31,11 +31,11 @@ export default {
 
       <div class="flex flex-col place-items-center">
         <h2
-          class="lg:text-3xl leading-tight leading-7 text-center break-words mb-[2%]"
+          class="text-2xl lg:text-3xl leading-tight leading-7 text-center break-words mb-[5%] md:mb-[2%]"
         >
           {{ about.subtitle }}
         </h2>
-        <div class="grid grid-cols-5 gap-5">
+        <div class="grid grid-cols-3 md:grid-cols-5 md:gap-5">
           <div
             class="flex"
             v-for="(item, index) in about.stack.icons"
@@ -44,7 +44,7 @@ export default {
             <Icon class="m-5" v-bind:data="item" />
           </div>
         </div>
-        <div class="grid grid-cols-3 my-20 self-center">
+        <div class="grid grid-cols-2 md:grid-cols-3 my-20 self-center">
           <div v-for="(item, index) in about.stack.noicons" :key="index">
             <Button class="m-5" v-bind:data="item" />
           </div>

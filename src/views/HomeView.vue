@@ -9,8 +9,8 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-row p-32 xm-9 xmax-h-[77%] lg:h-[100%] bg-[#1e272e]">
-    <div class="flex w-[60vw] xmb-[16%]">
+  <div class="flex flex-col lg:flex-row p-5 lg:p-32 lg:h-[100%] bg-[#1e272e]">
+    <div class="flex w-[60vw] m-auto md:mb-[16%] lg:mb-0">
       <img
         class="rounded-full object-contain"
         alt="Picture of me"
@@ -18,11 +18,13 @@ export default {
       />
     </div>
     <div class="flex flex-col justify-center items-center">
-      <h1 class="text-7xl mb-[2%] lg:text-center lg:w-[80%]">
+      <h1
+        class="text-4xl md:text-7xl mb-[7%] md:mb-[5%] lg:mb-[2%] lg:text-center lg:w-[80%]"
+      >
         Hi, I'm Sara<span id="blink">_</span>
       </h1>
       <p
-        class="text-xl lg:text-2xl leading-tight leading-7 text-justify lg:text-center break-words mb-[12%] lg:w-[80%]"
+        class="text-xl md:text-2xl leading-tight leading-7 text-center break-words mb-[12%] lg:w-[80%]"
       >
         {{ home.info }}
       </p>
