@@ -1,0 +1,164 @@
+{
+  "home": {
+    "info": "I am a .NET full stack web developer based in Stockholm, who is passionate about coding and technology."
+  },
+  "contact": {
+    "email": "mailto:sara.khabazbashi@appliedtechnology.se",
+    "linkedin": "https://www.linkedin.com/in/sara-k-768537219/",
+    "github": "https://github.com/Khabazbashi"
+  },
+  "projects":{
+    "title": "My projects",
+    "items": [
+      {
+        "subtitle": "Simple Calculator",
+        "link": "https://github.com/Khabazbashi/SimpleCalculator",
+        "description": "A mobile application made with React Native and Expo. The aim of this project was to create a simple calculator with basic functionality while learning react native. A mobile application made with React Native and Expo. The aim of this project was to create a simple calculator with basic functionality while learning react native."
+      },
+      {
+        "subtitle": "Wedding Invitation",
+        "link": "https://wedding-invitation-iota.vercel.app/",
+        "description": "This project was created for my wedding as a replacement for invitation cards, it was an opportunity for me to learn a bit more about React and how to deploy. The project is entirely based on React, deployed using Vercel. Key learning moments was general training in React, routing, deployment and connecting to Google Maps services. The site is primarily designed for mobile use."
+      },
+      {
+        "subtitle": "Portfolio",
+        "link": "https://adda-portfolio.vercel.app/",
+        "description": "My personal portfolio used to display my work. The application is hosted on Vercel and built using Vue with a mobile first approach. The app will continuously be updated with information and improved regarding design and functionality."
+      },
+      {
+        "subtitle": "Linqin",
+        "link": "https://calm-smoke-042ccb503.1.azurestaticapps.net/",
+        "description": "This is a project we (Sara, Ulfath, Björn) made as a mob to graduate Salt. The project lasted for two weeks and was required to be full stack. LINQ facilitates and streamlines coding and increases readability and maintainability of your code. It can however at times be daunting and challenging, especially for one who lacks previous experience in coding. We wanted to create an app that helps future coders and students at SALT by providing a visual and challenge based coding experience of LINQ that facilitates the learning process."
+      }
+    ]
+  },
+  "about": {
+    "title": "About me",
+    "info": "I am a full stack .NET developer who transitioned from a background in dentistry. My interest in computers and technology goes back as far as I can remember and hasn't subsided since.\n \nRecently, I had the chance to turn my lifelong passion into a career when I was selected to attend </salt> bootcamp. \n\nI love the problem-solving aspect of coding and have a desire to constantly learn new skills and improve.",
+    "subtitle": "Skills",
+    "stack": {
+      "icons": [
+        {
+          "image": "https://i.imgur.com/FV9bGuI.png",
+          "alt":    "C#"
+        },
+        {
+          "image": "https://i.imgur.com/AkF7wwX.png",
+          "alt":    ".NET Core"
+        },
+        {
+          "image": "https://i.imgur.com/XlBhL8r.png",
+          "alt":    "JavaScript "
+        },
+        {
+          "image": "https://i.imgur.com/oPr12pv.png",
+          "alt":    "HTML"
+        },
+        {
+          "image": "https://i.imgur.com/krVgT6g.png",
+          "alt":    "CSS "
+        },
+        {
+          "image": "https://i.imgur.com/tyxw1w4.png",
+          "alt":    "React "
+        },
+        {
+          "image": "https://i.imgur.com/R0Klr0O.png",
+          "alt":    "Vue"
+        },
+ 
+        {
+          "image": "https://i.imgur.com/f7Pvt9O.png",
+          "alt":    "TailwindCSS "
+        },
+        {
+          "image": "https://i.imgur.com/CnYcu2X.png",
+          "alt":    "SQL Server"
+        },
+        {
+          "image": "https://i.imgur.com/4R5h5mh.png",
+          "alt":    "Entity Framework"
+        },
+        {
+          "image": "https://i.imgur.com/3ewyYsv.png",
+          "alt":    "NodeJS"
+        },
+        {
+          "image": "https://i.imgur.com/PSVDtf3.png",
+          "alt":    "R"
+        },
+        {
+          "image": "https://i.imgur.com/LjcMIjZ.jpg",
+          "alt":    "REST"
+        },
+        {
+          "image": "https://i.imgur.com/DOuRecZ.png",
+          "alt":    "Azure"
+        },
+        {
+          "image": "https://imgur.com/PAshpFC.png",
+          "alt":    "Azure Data Studio"
+        },
+        {
+          "image": "https://i.imgur.com/DGspkuq.png",
+          "alt":    "Vercel"
+        },
+        {
+          "image": "https://i.imgur.com/LZpYB17.png",
+          "alt":    "Heroku"
+        },
+        {
+          "image": "https://i.imgur.com/G4nMova.png",
+          "alt":    "VS Code"
+        },
+        {
+          "image": "https://i.imgur.com/YS06ztj.png",
+          "alt":    "Visual Studio"
+        },
+        {
+          "image": "https://i.imgur.com/XTPbmX7.png",
+          "alt":    "Rider"
+        },
+        {
+          "image": "https://i.imgur.com/RpZfluP.png",
+          "alt":    "GitHub"
+        },
+        {
+          "image": "https://i.imgur.com/88KOoHw.png",
+          "alt":    "Jest"
+        },
+        {
+          "image": "https://i.imgur.com/C6bA2gH.png",
+          "alt":    "xUnit"
+        },
+        {
+          "image": "https://i.imgur.com/VWyn82M.png",
+          "alt":    "Docker"
+        },
+  
+        {
+          "image": "https://i.imgur.com/S2d8YGC.png",
+          "alt":    "Latex"
+        },
+
+        {
+          "image": "https://i.imgur.com/2qI5iej.png",
+          "alt":    "Trello"
+        },
+        {
+          "image": "https://i.imgur.com/cdQVaxK.png",
+          "alt":    "Figma"
+        }
+      ],
+      "noicons":[
+        "Razor Pages", 
+        "MVC", 
+        "Web API", 
+        "TDD", 
+        "Mob Programming", 
+        "Agile work methods"
+      ] 
+    } 
+   
+  }
+}

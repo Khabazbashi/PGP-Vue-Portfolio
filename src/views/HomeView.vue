@@ -1,35 +1,36 @@
-<script setup></script>
+<script>
+import home from "../data/data.json";
+
+export default {
+  data() {
+    return home;
+  },
+};
+</script>
 
 <template>
-  <div
-    class="home flex flex-col justify-center m-9 max-h-[77%] lg:max-w-[100%] lg:m-auto lg:place-items-center"
-  >
-    <h1 class="hello text-7xl mb-[6%] lg:mt-[8%]">
-      Hello<span id="blink">_</span>
-    </h1>
-    <p
-      class="about flex text-xl lg:text-2xl leading-tight leading-7 text-justify lg:text-center break-words mb-[12%] lg:w-[55%]"
-    >
-      My name is Sara and I'm a Full-Stack .NET Developer from Stockholm. My
-      main area is .NET Core and C#, but I have experience with several other
-      tools and technologies as well. I am always open to learning new skills
-      and I enjoy a good challenge and the opportunity to be creative.
-    </p>
-    <div class="flex w-auto place-content-center grayscale h-56 mb-[16%]">
+  <div class="flex flex-row p-32 xm-9 xmax-h-[77%] lg:h-[100%] bg-[#1e272e]">
+    <div class="flex w-[60vw] xmb-[16%]">
       <img
         class="rounded-full object-contain"
         alt="Picture of me"
         src="@/assets/adda.png"
       />
     </div>
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-7xl mb-[2%] lg:text-center lg:w-[80%]">
+        Hi, I'm Sara<span id="blink">_</span>
+      </h1>
+      <p
+        class="text-xl lg:text-2xl leading-tight leading-7 text-justify lg:text-center break-words mb-[12%] lg:w-[80%]"
+      >
+        {{ home.info }}
+      </p>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.about {
-  font-family: "Dosis", sans-serif;
-}
-
 #blink {
   animation: blinking 1s infinite;
 }

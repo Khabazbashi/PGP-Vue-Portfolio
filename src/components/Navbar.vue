@@ -6,9 +6,12 @@ import PortfolioIcon from "./icons/IconPortfolio.vue";
 import { Slide } from "vue3-burger-menu";
 </script>
 
+//TODO fix routerlinks //TODO fix card component for projects //TODO fix scroll
+up button //TODO add color to icons
+
 <template>
-  <nav class="navbar flex flex-row bg-white p-4 mx-auto w-full">
-    <Slide
+  <nav class="navbar flex flex-row text-black p-4 mx-auto w-full">
+    <!-- <Slide
       class="hamburger-menu grow lg:hidden"
       right
       width="420"
@@ -17,6 +20,7 @@ import { Slide } from "vue3-burger-menu";
       <a>
         <span> <RouterLink to="/">Home</RouterLink></span>
       </a>
+    
       <a>
         <span> <RouterLink to="about">About</RouterLink></span>
       </a>
@@ -26,27 +30,22 @@ import { Slide } from "vue3-burger-menu";
       <a>
         <span> <RouterLink to="techstack">Skills</RouterLink></span>
       </a>
-    </Slide>
-
+    </Slide> -->
     <div
-      class="nav-links hidden lg:flex flex-row text-xl my-auto ml-5 space-x-10 grow"
+      class="nav-links hidden lg:flex flex-row text-xl my-auto ml-16 space-x-10 grow"
     >
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="about">About</RouterLink>
-      <RouterLink to="projects">Projects</RouterLink>
-      <RouterLink to="techstack">Skills</RouterLink>
+      <p style="font-family: 'Raleway', sans-serif; font-size: 25px">
+        Sara Khabazbashi
+      </p>
     </div>
-
-    <div class="social-buttons flex flex-row space-x-4 float-right">
-      <a target="_blank" href="https://github.com/Khabazbashi"
-        ><GithubIcon class="social-icon w-auto h-12 p-2 rounded-full self-end"
-      /></a>
-      <a target="_blank" href="https://www.linkedin.com/in/sara-k-768537219/"
-        ><LinkedinIcon class="social-icon w-auto h-12 p-2 rounded-full"
-      /></a>
-      <a target="_blank" href="mailto:sara.khabazbashi@appliedtechnology.se"
-        ><PortfolioIcon class="social-icon w-auto h-12 p-2 rounded-full"
-      /></a>
+    <div
+      style="font-family: 'Work Sans', sans-serif; font-size: 25px"
+      class="nav-links flex flex-row space-x-4 text-xl my-auto float-right mr-16"
+    >
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT ME</a>
     </div>
   </nav>
 </template>

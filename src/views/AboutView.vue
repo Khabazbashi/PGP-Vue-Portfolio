@@ -1,51 +1,55 @@
-<script setup>
-import Section from "../components/Section.vue";
+<script>
+import about from "../data/data.json";
+import Icon from "../components/Icon.vue";
+import Button from "../components/Button.vue";
+
+export default {
+  components: {
+    Icon: Icon,
+    Button: Button,
+  },
+  data() {
+    return about;
+  },
+};
 </script>
 
 <template>
-  <div class="about">
-    <Section
-      :main="{ title: 'EDUCATION' }"
-      :content="[
-        {
-          subtitle:
-            'Full Stack .NET Developer / School of Applied Technology SALT',
-          date: 'July 2022 - April 2022',
-          description:
-            'Intensive three month training program for full stack web development with a focus on TDD, mob programming and applied learning.',
-        },
-        {
-          subtitle:
-            'Degree of Master of Science in Dental Surgery / University of Gothenburg',
+  <div class="flex flex-col items-center min-h-[100%] py-10 bg-[#946268]">
+    <div class="w-[50%]">
+      <div class="mb-20">
+        <h1 class="text-5xl mt-20 mb-5 font-bold text-center">
+          {{ about.title }}
+        </h1>
+        <p
+          style="white-space: pre-line"
+          class="text-xl text-justify w-[80%] m-auto"
+        >
+          {{ about.info }}
+        </p>
+      </div>
 
-          date: 'June 2015 - August 2010',
-          description:
-            'Five years of studies integrating theoretical, research-based knowledge with practical applications and hands-on training.',
-        },
-      ]"
-    />
-    <Section
-      :main="{ title: 'WORK EXPERIENCE' }"
-      :content="[
-        {
-          subtitle: 'Dentist / Distriktstandvården Kallhäll',
-          date: 'July 2020 - June 2022',
-          description:
-            'Lead for pediatric dentistry and orthodontics. My role included supporting colleagues when needed, undertaking more complex treatments and sedation. Responsible for organizing and maintaining all administrative tasks related to pediatric referrals.',
-        },
-        {
-          subtitle: 'Dentist / Folktandvården Stockholm AB',
-          date: 'February 2017 - March 2020',
-          description:
-            'Routine dental tasks and responsible for radiological control. Quality control of x-ray equipment and x-ray related medical records.',
-        },
-        {
-          subtitle: 'Dentist / Folktandvården Örebro län',
-          date: 'August 2015 - January 2017',
-          description:
-            'My first work experience as a dentist where I had the opportunity to greatly grow in my professional role and skills.',
-        },
-      ]"
-    />
+      <div class="flex flex-col place-items-center">
+        <h2
+          class="lg:text-3xl leading-tight leading-7 text-center break-words mb-[2%]"
+        >
+          {{ about.subtitle }}
+        </h2>
+        <div class="grid grid-cols-5 gap-5">
+          <div
+            class="flex"
+            v-for="(item, index) in about.stack.icons"
+            :key="index"
+          >
+            <Icon class="m-5" v-bind:data="item" />
+          </div>
+        </div>
+        <div class="grid grid-cols-3 my-20 self-center">
+          <div v-for="(item, index) in about.stack.noicons" :key="index">
+            <Button class="m-5" v-bind:data="item" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

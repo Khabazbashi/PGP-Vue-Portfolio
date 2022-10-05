@@ -11,15 +11,13 @@ defineProps({
 </script>
 
 <template>
-  <div class="main flex grow flex-col my-20 lg:place-items-center">
-    <div v-if="main.title" class="main__header flex flex-col text-center">
-      <h1 class="main__title text-5xl mt-36 mb-10 mx-9">{{ main.title }}</h1>
-      <p class="main__info text-lg mx-9 mb-32">{{ main.info }}</p>
+  <div class="flex flex-col w-[100%] items-center">
+    <div v-if="main.title" class="flex flex-col text-center w-[50%] mb-16">
+      <h1 class="text-5xl mt-36 mb-5 font-bold">{{main.title}}</h1>
+      <p class="text-xl">{{ main.info }}</p>
     </div>
-
-    <div class="main__body bg-white lg:w-6/12">
+    <div class="main__body lg:w-6/12">
       <subsection
-        class="mx-9"
         v-for="(item, index) in content"
         v-bind:key="index"
         v-bind:data="item"
@@ -28,11 +26,4 @@ defineProps({
   </div>
 </template>
 
-<style scoped>
-.main__info {
-  font-family: "Miriam Libre", sans-serif;
-}
-.main__title {
-  font-family: "Dosis", sans-serif;
-}
-</style>
+

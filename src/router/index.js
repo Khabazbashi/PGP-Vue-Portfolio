@@ -15,14 +15,14 @@ const router = createRouter({
       component: () => import("../views/AboutView.vue"),
     },
     {
-      path: "/techstack",
-      name: "techstack",
-      component: () => import("../views/TechstackView.vue"),
-    },
-    {
       path: "/projects",
       name: "projects",
       component: () => import("../views/ProjectsView.vue"),
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: () => import("../views/ContactView.vue"),
     },
   ],
 });
