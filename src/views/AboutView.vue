@@ -15,15 +15,18 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col items-center min-h-[100%] py-10 bg-[#946268]">
+  <div class="flex-col min-h-[100%] lg:p-16 p-6 bg-[#946268] items-center">
     <div class="lg:w-[50%]">
-      <div class="mb-20">
-        <h1 class="text-5xl md:mt-20 mb-5 font-bold text-center">
+      <div class="my-20">
+        <h1
+          style="font-family: 'Work Sans', sans-serif"
+          class="text-5xl md:mt-20 mb-5 font-bold text-center"
+        >
           {{ about.title }}
         </h1>
         <p
           style="white-space: pre-line"
-          class="text-xl text-justify w-[80%] m-auto"
+          class="text-xl md:text-2xl text-center w-[80%] m-auto"
         >
           {{ about.info }}
         </p>

@@ -7,10 +7,10 @@ import { Slide } from "vue3-burger-menu";
 </script>
 
 //TODO fix routerlinks //TODO fix card component for projects //TODO fix scroll
-up button //TODO add color to icons
+up button //TODO add color to icons //TODO burger in middle
 
 <template>
-  <nav class="navbar flex flex-row text-black p-4 mx-auto w-full transparent">
+  <nav class="navbar flex flex-row text-black p-4 mx-auto w-full">
     <Slide
       class="hamburger-menu grow lg:hidden"
       right
@@ -58,19 +58,10 @@ html {
   width: 36px;
   height: 30px;
   left: 5% !important;
-  top: 22px !important;
+  top: 3% !important;
 }
 .bm-burger-button.hidden {
   display: none;
-}
-.bm-burger-bars {
-  background-color: #373a47;
-}
-.line-style {
-  position: absolute;
-  height: 20%;
-  left: 0;
-  right: 0;
 }
 .cross-style {
   position: absolute;
@@ -85,9 +76,6 @@ html {
   height: 24px;
   width: 24px;
 }
-.bm-cross-button.hidden {
-  display: none;
-}
 .bm-menu {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -95,7 +83,7 @@ html {
   z-index: 1000; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: rgba(63, 63, 65, 0.8); /* Black*/
+  background-color: rgba(0, 0, 0, 0.8); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
@@ -117,9 +105,5 @@ html {
   margin-left: 10px;
   font-weight: 700;
   color: white;
-}
-
-.social-icon {
-  background-color: var(--color-background);
 }
 </style>

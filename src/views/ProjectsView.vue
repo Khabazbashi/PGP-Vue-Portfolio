@@ -10,10 +10,13 @@ export default {
 
 <template>
   <div
-    class="flex flex-col items-center min-h-[100%] bg-[#1b191a] px-10 md:px-20"
+    class="flex-col min-h-[100%] lg:p-16 p-6 bg-[#1b191a] items-center md:px-20"
   >
     <div class="lg:w-[60%]">
-      <h1 class="text-5xl mt-20 mb-[15%] font-bold text-center">
+      <h1
+        style="font-family: 'Work Sans', sans-serif"
+        class="text-5xl mt-20 lg:mb-[8%] font-bold text-center"
+      >
         {{ projects.title }}
       </h1>
       <div>
