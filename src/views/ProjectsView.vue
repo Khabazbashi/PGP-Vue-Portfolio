@@ -10,17 +10,17 @@ export default {
 
 <template>
   <div
-    class="flex-col min-h-[100%] lg:p-16 p-6 bg-[#1b191a] items-center md:px-20"
+    class="flex-col min-h-[100%] xl:p-16 p-6 bg-[#1b191a] items-center md:px-20"
   >
-    <div class="lg:w-[60%]">
+    <div class="xl:w-[60%]">
       <h1
         style="font-family: 'Work Sans', sans-serif"
-        class="text-5xl mt-20 lg:mb-[8%] font-bold text-center"
+        class="text-5xl mt-20 xl:mb-[8%] font-bold text-center"
       >
         {{ projects.title }}
       </h1>
       <div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 my-16">
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-20 my-16">
           <div
             class="flex flex-col"
             v-for="(item, index) in projects.items"

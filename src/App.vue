@@ -8,7 +8,7 @@ import about from "./views/AboutView.vue";
 </script>
 
 <template>
-  <navbar class="h-[4em] md:h-[7vh]" />
+  <navbar class="h-[4em] md:h-[7vh] lg:h-[4em]" />
   <RouterView class="lg:hidden flex flex-col m-h-full grow" />
   <div class="hidden lg:inline mx-20 mb-20 overflow-auto h-[86vh]">
     <home id="home" class="hidden lg:flex" />

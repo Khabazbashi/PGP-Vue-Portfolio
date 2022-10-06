@@ -15,8 +15,8 @@ export default {
 </script>
 
 <template>
-  <div class="flex-col min-h-[100%] lg:p-16 p-6 bg-[#946268] items-center">
-    <div class="lg:w-[50%]">
+  <div class="flex-col min-h-[100%] xl:p-16 p-6 bg-[#946268] items-center">
+    <div class="xl:w-[50%]">
       <div class="my-20">
         <h1
           style="font-family: 'Work Sans', sans-serif"
@@ -34,7 +34,7 @@ export default {
 
       <div class="flex flex-col place-items-center">
         <h2
-          class="text-2xl lg:text-3xl leading-tight leading-7 text-center break-words mb-[5%] md:mb-[2%]"
+          class="text-2xl xl:text-3xl leading-tight leading-7 text-center break-words mb-[5%] md:mb-[2%]"
         >
           {{ about.subtitle }}
         </h2>

@@ -31,7 +31,7 @@ up button //TODO add color to icons //TODO burger in middle
         <span> <RouterLink to="contact">Contact</RouterLink></span>
       </a>
     </Slide>
-    <div class="hidden lg:flex flex-row text-xl my-auto ml-16 space-x-10 grow">
+    <div class="hidden xl:flex flex-row text-xl my-auto ml-16 space-x-10 grow">
       <p style="font-family: 'Raleway', sans-serif; font-size: 25px">
         Sara Khabazbashi
       </p>
@@ -39,7 +39,7 @@ up button //TODO add color to icons //TODO burger in middle
 
     <div
       style="font-family: 'Work Sans', sans-serif; font-size: 25px"
-      class="hidden lg:flex flex-row space-x-4 text-xl my-auto float-right mr-16"
+      class="hidden xl:flex flex-row space-x-4 text-xl my-auto float-right mr-16"
     >
       <a href="#home">HOME</a>
       <a href="#about">ABOUT</a>
