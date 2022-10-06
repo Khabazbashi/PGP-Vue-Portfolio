@@ -13,10 +13,7 @@ export default {
     class="flex-col min-h-[100%] xl:p-16 p-6 bg-[#1b191a] items-center md:px-20"
   >
     <div class="xl:w-[60%]">
-      <h1
-        style="font-family: 'Work Sans', sans-serif"
-        class="text-5xl mt-20 xl:mb-[8%] font-bold text-center"
-      >
+      <h1 class="text-5xl mt-20 xl:mb-[8%] font-bold text-center">
         {{ projects.title }}
       </h1>
       <div>
