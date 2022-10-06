@@ -10,9 +10,9 @@ export default {
 
 <template>
   <div
-    class="flex-row min-h-[100%] p-6 md:p-16 bg-[#1e272e] justify-center items-center lg:bg-red-500"
+    class="flex-row min-h-[100%] p-6 md:p-16 bg-[#1e272e] justify-center items-center"
   >
-    <div class="flex w-[70%] xl:w-[35em] xl:mb-0">
+    <div class="flex w-[14em] md:w-[70%] xl:w-[35em] xl:mb-0">
       <img
         class="rounded-full object-contain"
         alt="Picture of me"
