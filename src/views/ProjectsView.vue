@@ -2,6 +2,11 @@
 import projects from "../data/data.json";
 
 export default {
+  props: {
+    bgColor: {
+      type: String,
+    },
+  },
   data() {
     return projects;
   },
@@ -10,6 +15,7 @@ export default {
 
 <template>
   <div
+    :style="{ 'background-color': bgColor }"
     class="flex-col min-h-[100%] xl:p-16 p-6 bg-[#1b191a] items-center md:px-20"
   >
     <div class="xl:w-[60%]">

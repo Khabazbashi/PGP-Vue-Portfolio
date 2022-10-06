@@ -10,14 +10,21 @@ export default {
     LinkedinIcon: LinkedinIcon,
     PortfolioIcon: PortfolioIcon,
   },
+  props: {
+    bgColor: {
+      type: String,
+    },
+  },
   data() {
     return contact;
   },
 };
 </script>
+
 <template>
   <div
-    class="flex-col min-h-[100%] xl:p-16 p-6 bg-[#284848] items-center justify-center"
+    :style="{ 'background-color': bgColor }"
+    class="flex-col min-h-[100%] xl:p-16 p-6 items-center justify-center"
   >
     <div class="md:w-[60%]">
       <h1 class="text-center text-5xl font-bold my-10">Contact me</h1>

@@ -2,6 +2,11 @@
 import home from "../data/data.json";
 
 export default {
+  props: {
+    bgColor: {
+      type: String,
+    },
+  },
   data() {
     return home;
   },
@@ -10,7 +15,8 @@ export default {
 
 <template>
   <div
-    class="flex-row min-h-[100%] p-6 md:p-16 bg-[#1e272e] justify-center items-center"
+    :style="{ 'background-color': bgColor }"
+    class="flex-row min-h-[100%] p-6 md:p-16 justify-center items-center"
   >
     <div class="flex w-[14em] md:w-[70%] xl:w-[35em] xl:mb-0">
       <img
