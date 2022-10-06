@@ -11,26 +11,28 @@ up button //TODO add color to icons //TODO burger in middle
 
 <template>
   <nav class="navbar flex flex-row text-black p-4 mx-auto w-full">
-    <Slide
-      class="hamburger-menu grow lg:hidden"
-      right
-      width="420"
-      :closeOnNavigation="true"
-    >
-      <a>
-        <span> <RouterLink to="/">Home</RouterLink></span>
-      </a>
+    <div class="flex relative bg-black">
+      <Slide
+        class="hamburger-menu grow lg:hidden"
+        right
+        width="420"
+        :closeOnNavigation="true"
+      >
+        <a>
+          <span> <RouterLink to="/">Home</RouterLink></span>
+        </a>
 
-      <a>
-        <span> <RouterLink to="about">About</RouterLink></span>
-      </a>
-      <a>
-        <span> <RouterLink to="projects">Projects</RouterLink></span>
-      </a>
-      <a>
-        <span> <RouterLink to="contact">Contact</RouterLink></span>
-      </a>
-    </Slide>
+        <a>
+          <span> <RouterLink to="about">About</RouterLink></span>
+        </a>
+        <a>
+          <span> <RouterLink to="projects">Projects</RouterLink></span>
+        </a>
+        <a>
+          <span> <RouterLink to="contact">Contact</RouterLink></span>
+        </a>
+      </Slide>
+    </div>
     <div class="hidden xl:flex flex-row text-xl my-auto ml-16 space-x-10 grow">
       <p style="font-family: 'Raleway', sans-serif; font-size: 25px">
         Sara Khabazbashi
