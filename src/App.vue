@@ -5,26 +5,34 @@ import contact from "./views/ContactView.vue";
 import home from "./views/HomeView.vue";
 import projects from "./views/ProjectsView.vue";
 import about from "./views/AboutView.vue";
+import { lightOrDark } from "./assets/colorGenerator.js";
 </script>
 
 <script>
 export default {
-  name: "post-request",
-  data() {
-    return {
-      color: String,
-    };
+  methods: {
+    lightOrDark,
   },
   computed: {
     gradient1() {
-      return `linear-gradient(${this.color.palette[0]}, ${this.color.palette[1]})`;
+      return `linear-gradient(${this.color1}, ${this.color2})`;
     },
     gradient2() {
-      return `linear-gradient(${this.color.palette[1]}, ${this.color.palette[2]})`;
+      return `linear-gradient(${this.color2}, ${this.color3})`;
     },
     gradient3() {
-      return `linear-gradient(${this.color.palette[2]}, ${this.color.palette[3]})`;
+      return `linear-gradient(${this.color3}, ${this.color4})`;
     },
+  },
+  name: "post-request",
+  data() {
+    return {
+      colorList: null,
+      color1: null,
+      color2: null,
+      color3: null,
+      color4: null,
+    };
   },
   created() {
     const requestOptions = {
@@ -34,7 +42,7 @@ export default {
         mode: "transformer",
         num_colors: 4,
         temperature: "1.3",
-        num_results: 2,
+        num_results: 4,
         adjacency: [
           "0",
           "65",
@@ -58,26 +66,32 @@ export default {
     };
     fetch("https://api.huemint.com/color", requestOptions)
       .then((response) => response.json())
-      .then((data) => (this.color = data.results[0]));
+      .then(
+        (data) => (
+          (this.colorList = data),
+          (this.color1 = lightOrDark(data.results[0].palette)),
+          (this.color2 = lightOrDark(data.results[1].palette)),
+          (this.color3 = lightOrDark(data.results[2].palette)),
+          (this.color4 = lightOrDark(data.results[3].palette))
+        )
+      );
   },
 };
 </script>
 
 <template>
   <navbar class="h-[4em] lg:h-[7vh]" />
-  <RouterView class="lg:hidden flex flex-col md:m-h-full grow" />
+  <RouterView
+    :bgColor="color1"
+    class="lg:hidden flex flex-col md:m-h-full grow"
+  />
   <div class="hidden lg:inline mx-20 mb-20 overflow-auto h-[86vh] lg:mb-[7vh]">
-    <home id="home" :bgColor="color.palette[0]" class="hidden lg:flex" />
-    <div class="h-[30em]" :style="{ background: gradient1 }"></div>
-
-    <about id="about" :bgColor="color.palette[1]" class="hidden lg:flex" />
-    <div class="h-[30em]" :style="{ background: gradient2 }"></div>
-    <projects
-      id="projects"
-      :bgColor="color.palette[2]"
-      class="hidden lg:flex"
-    />
-    <div class="h-[30em]" :style="{ background: gradient3 }"></div>
-    <contact id="contact" :bgColor="color.palette[3]" class="hidden lg:flex" />
+    <home id="home" :bgColor="color1" class="hidden lg:flex" />
+    <div class="h-2" :style="{ background: gradient1 }"></div>
+    <about id="about" :bgColor="color2" class="hidden lg:flex" />
+    <div class="h-2" :style="{ background: gradient2 }"></div>
+    <projects id="projects" :bgColor="color3" class="hidden lg:flex" />
+    <div class="h-2" :style="{ background: gradient3 }"></div>
+    <contact id="contact" :bgColor="color4" class="hidden lg:flex" />
   </div>
 </template>

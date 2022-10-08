@@ -1,22 +1,26 @@
-export function lightOrDark(colorList) {
 
-    for (let i = 0; i < colorList.length; i++) {
+ export function lightOrDark(colorList) {
+
+    let color;
+    for (let i = 0; i < 4; i++) {
     
-        color = color[i].match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/);
-  
-        r = color[1];
-        g = color[2];
-        b = color[3];
+        color = colorList[i];
+        let r = parseInt(`${color[1]}${color[2]}`,16)
+        let g = parseInt(`${color[3]}${color[4]}`,16)
+        let b = parseInt(`${color[5]}${color[6]}`,16)
         
-        hsp = Math.sqrt(
+        let hsp = Math.sqrt(
         0.299 * (r * r) +
         0.587 * (g * g) +
         0.114 * (b * b) );
 
-        if (hsp>127.5) {
-            return true;
+        if (hsp<180) {
+        
+            return color;
         } 
       }  
-
-      return false;
+      return "#A26067";
   };
+ 
+ 
+
