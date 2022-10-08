@@ -24,9 +24,9 @@ export default {
     :style="{ 'background-color': bgColor }"
     class="flex-col min-h-[100%] xl:p-16 p-6 items-center"
   >
-    <div class="xl:w-[50%]">
-      <div class="my-20">
-        <h1 class="text-5xl md:mt-20 mb-5 font-bold text-center">
+    <div>
+      <div class="my-20 xl:w-[50%] m-auto">
+        <h1 class="text-5xl md:mt-20 mb-8 font-bold text-center">
           {{ about.title }}
         </h1>
         <p
@@ -39,22 +39,15 @@ export default {
 
       <div class="flex flex-col place-items-center">
         <h2
-          class="text-2xl xl:text-3xl leading-tight leading-7 text-center break-words mb-[5%] md:mb-[2%]"
+          class="text-2xl xl:text-3xl leading-tight leading-7 text-center break-words mb-[5%] lg:mb-0 md:mb-[2%]"
         >
           {{ about.subtitle }}
         </h2>
-        <div class="grid grid-cols-3 md:grid-cols-5 md:gap-5">
-          <div
-            class="flex"
-            v-for="(item, index) in about.stack.icons"
-            :key="index"
-          >
-            <Icon class="m-5" v-bind:data="item" />
-          </div>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 my-20 self-center">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 my-12 lg:my-10 self-center xl:justify-center"
+        >
           <div v-for="(item, index) in about.stack.noicons" :key="index">
-            <Button class="m-5" v-bind:data="item" />
+            <Button class="m-1" :color="bgColor" v-bind:data="item" />
           </div>
         </div>
       </div>
