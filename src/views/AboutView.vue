@@ -31,7 +31,7 @@ export default {
         </h1>
         <p
           style="white-space: pre-line"
-          class="text-xl md:text-2xl text-center w-[80%] m-auto"
+          class="text-lg md:text-2xl text-center w-[80%] m-auto"
         >
           {{ about.info }}
         </p>

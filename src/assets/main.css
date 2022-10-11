@@ -11,16 +11,19 @@ body {
 }
 
 #app {
-  display: flex;
-  flex-direction: column;
+  display: block;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   margin: auto 0;
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Raleway', sans-serif;
 }
 
-/* @media (hover: hover) {
-  a:hover {
+
+@media only screen and (min-width: 700px) {
+  #app {
+    display: flex;
+    flex-direction: column;
   }
-} */
+  
+}

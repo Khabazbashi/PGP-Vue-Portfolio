@@ -24,11 +24,11 @@ export default {
 <template>
   <div
     :style="{ 'background-color': bgColor }"
-    class="flex-col min-h-[100%] xl:p-16 p-6 items-center justify-center w-[100%] grow"
+    class="md:flex-row min-h-[100%] p-6 lg:p-16 justify-center items-center"
   >
-    <div class="md:w-[60%]">
-      <h1 class="text-center text-5xl font-bold my-10">Contact me</h1>
-      <div class="flex flex-row justify-center my-28 md:my-10">
+    <div class="md:w-[60%] grow">
+      <h1 class="text-center text-5xl font-bold">Contact me</h1>
+      <div class="flex flex-row justify-center mt-6 md:my-10">
         <a target="_blank" :href="contact.github"
           ><GithubIcon class="social-icon w-auto h-20 m-5 rounded-full"
         /></a>

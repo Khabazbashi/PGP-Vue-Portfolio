@@ -16,17 +16,18 @@ export default {
 <template>
   <div
     :style="{ 'background-color': bgColor }"
-    class="flex-col md:flex-row min-h-[100%] p-6 pt-28 md:p-16 justify-center items-center"
+    class="flex-col min-h-[100%] p-6 justify-center items-center lg:flex-row lg:p-16"
   >
-    <div class="flex w-[14em] md:w-[35%] lg:w-[35em] lg:mb-0 m-auto">
+    <div class="flex w-[14em] md:w-[35%] lg:w-[35em]">
       <img
         class="rounded-full object-contain"
         alt="Picture of me"
         src="@/assets/adda.png"
       />
     </div>
+
     <div
-      class="flex flex-col justify-center items-center mt-12 md:mt-20 xl:m-0 xl:w-[70%]"
+      class="flex flex-col justify-center items-center mt-12 md:mt-16 md:text-center md:mx-auto md:w-[80%] xl:m-0 xl:w-[70%]"
     >
       <h1
         style="font-family: 'Work Sans', sans-serif"
