@@ -24,7 +24,7 @@ export default {
 <template>
   <div
     :style="{ 'background-color': bgColor }"
-    class="flex-col min-h-[100%] xl:p-16 p-6 items-center justify-center"
+    class="flex-col min-h-[100%] xl:p-16 p-6 items-center justify-center w-[100%]"
   >
     <div class="md:w-[60%]">
       <h1 class="text-center text-5xl font-bold my-10">Contact me</h1>
