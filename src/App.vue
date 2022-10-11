@@ -80,18 +80,16 @@ export default {
 </script>
 
 <template>
-  <navbar class="h-[4em] lg:h-[7vh]" />
-  <RouterView
-    :bgColor="color1"
-    class="lg:hidden flex flex-col md:m-h-full grow"
-  />
-  <div class="hidden lg:inline mx-20 mb-20 overflow-auto h-[86vh] lg:mb-[7vh]">
-    <home id="home" :bgColor="color1" class="hidden lg:flex" />
+  <navbar class="h-[4em] md:h-[5em] lg:h-[7vh]" />
+  <div
+    class="lg:inline mx-20 mb-20 overflow-auto h-[93vh] md:h-[86vh] lg:mb-[7vh]"
+  >
+    <home id="home" :bgColor="color1" class="lg:flex" />
     <div class="h-2" :style="{ background: gradient1 }"></div>
-    <about id="about" :bgColor="color2" class="hidden lg:flex" />
+    <about id="about" :bgColor="color2" class="lg:flex" />
     <div class="h-2" :style="{ background: gradient2 }"></div>
-    <projects id="projects" :bgColor="color3" class="hidden lg:flex" />
+    <projects id="projects" :bgColor="color3" class="lg:flex" />
     <div class="h-2" :style="{ background: gradient3 }"></div>
-    <contact id="contact" :bgColor="color4" class="hidden lg:flex" />
+    <contact id="contact" :bgColor="color4" class="lg:flex" />
   </div>
 </template>

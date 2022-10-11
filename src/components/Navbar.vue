@@ -6,8 +6,7 @@ import PortfolioIcon from "./icons/IconPortfolio.vue";
 import { Slide } from "vue3-burger-menu";
 </script>
 
-//TODO fix routerlinks //TODO fix card component for projects //TODO fix scroll
-up button //TODO add color to icons //TODO burger in middle
+//TODO fix scroll up button
 
 <template>
   <nav class="navbar flex flex-row text-black p-4 mx-auto w-full">
@@ -18,19 +17,10 @@ up button //TODO add color to icons //TODO burger in middle
         width="420"
         :closeOnNavigation="true"
       >
-        <a>
-          <span> <RouterLink to="/">Home</RouterLink></span>
-        </a>
-
-        <a>
-          <span> <RouterLink to="about">About</RouterLink></span>
-        </a>
-        <a>
-          <span> <RouterLink to="projects">Projects</RouterLink></span>
-        </a>
-        <a>
-          <span> <RouterLink to="contact">Contact</RouterLink></span>
-        </a>
+        <a href="#home"> Home </a>
+        <a href="#about"> About </a>
+        <a href="#projects"> Projects </a>
+        <a href="#contact"> Contact </a>
       </Slide>
     </div>
     <div class="hidden xl:flex flex-row text-xl my-auto ml-16 space-x-10 grow">
