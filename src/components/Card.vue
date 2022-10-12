@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     getImg(image) {
-      return `../assets/${image}.png`;
+      return `/assets/${image}.png`;
     },
   },
 };
@@ -66,7 +66,7 @@ export default {
     >
       <img
         class="hidden md:flex self-center max-w-[100%] max-h-[90%] object-fill m-auto"
-        :src="getImg(data.path)"
+        :src="'/assets/' + data.path"
       />
     </div>
   </div>
