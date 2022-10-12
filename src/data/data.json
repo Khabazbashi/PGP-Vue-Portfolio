@@ -14,7 +14,7 @@
         "readMore": false,
         "subtitle": "Simple Calculator",
         "link": "https://github.com/Khabazbashi/SimpleCalculator",
-        "path": "@/assets/calculator.png",
+        "path": "calculator.png",
         "alt": "Calculator app",
         "description": "A mobile application made with React Native and Expo. The aim of this project was to create a simple calculator with basic functionality while learning react native. A mobile application made with React Native and Expo. The aim of this project was to create a simple calculator with basic functionality while learning react native."
       },
