@@ -1,5 +1,4 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
 import navbar from "./components/Navbar.vue";
 import contact from "./views/ContactView.vue";
 import home from "./views/HomeView.vue";
