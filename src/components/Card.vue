@@ -19,18 +19,18 @@ export default {
     };
   },
   methods: {
-    testing(irl) {
-      if (irl === "weddingImg") {
+    testing(path) {
+      if (path === "weddingImg") {
         return this.weddingImg;
       }
-      if (irl === "linqinImg") {
+      if (path === "linqinImg") {
         return this.linqinImg;
       }
-      if (irl === "portfolioImg") {
-        return this.linqinImg;
+      if (path === "portfolioImg") {
+        return this.portfolioImg;
       }
-      if (irl === "calculatorImg") {
-        return this.linqinImg;
+      if (path === "calculatorImg") {
+        return this.calculatorImg;
       }
     },
   },
