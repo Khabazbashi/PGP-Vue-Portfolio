@@ -9,13 +9,8 @@ import { lightOrDark } from "./assets/colorGenerator.js";
 </script>
 
 <script>
-$(window).unload(function () {
-  var currentURL = window.location.href;
-  var index = currentURL.lastIndexOf("/");
-  if (index > -1) {
-    window.location.href = currentURL.substring(0, index);
-  }
-});
+window.history.pushState("", "", "/");
+
 export default {
   methods: {
     lightOrDark,
