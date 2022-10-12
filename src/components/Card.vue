@@ -10,7 +10,7 @@ export default {
       return `background-image: url("${this.data.path}"); background-size: cover; background-repeat: no-repeat`;
     },
     icon() {
-      return `${this.data.path}`;
+      return `@/assets/${this.data.path}`;
     },
   },
 };
