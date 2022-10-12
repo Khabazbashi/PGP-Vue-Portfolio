@@ -9,8 +9,13 @@ import { lightOrDark } from "./assets/colorGenerator.js";
 </script>
 
 <script>
-window.location.replace("https://adda-portfolio.vercel.app/");
-
+$(window).unload(function () {
+  var currentURL = window.location.href;
+  var index = currentURL.lastIndexOf("/");
+  if (index > -1) {
+    window.location.href = currentURL.substring(0, index);
+  }
+});
 export default {
   methods: {
     lightOrDark,
