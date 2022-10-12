@@ -18,7 +18,7 @@ export default {
     :style="{ 'background-color': bgColor }"
     class="flex-col min-h-[100%] p-6 justify-center items-center lg:flex-row lg:p-16"
   >
-    <div class="flex w-[14em] md:w-[35%] lg:w-[35em]">
+    <div class="flex w-[14em] md:w-[35%] lg:w-[35em] p-3">
       <img
         class="rounded-full object-contain"
         alt="Picture of me"

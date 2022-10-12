@@ -6,10 +6,10 @@ export default {
     },
   },
   computed: {
-    imgIcon() {
+    bgImg() {
       return `background-image: url("${this.data.path}"); background-size: cover; background-repeat: no-repeat`;
     },
-    bgIcon() {
+    icon() {
       return `${this.data.path}`;
     },
   },
@@ -69,7 +69,7 @@ export default {
     >
       <img
         class="hidden md:flex self-center max-w-[100%] max-h-[90%] object-fill m-auto"
-        :src="bgIcon"
+        :src="icon"
       />
     </div>
   </div>
