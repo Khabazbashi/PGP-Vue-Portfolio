@@ -1,13 +1,37 @@
 <script>
+import wedding from "../assets/wedding.png";
+import linqin from "../assets/linqin.png";
+import portfolio from "../assets/portfolio.png";
+import calculator from "../assets/calculator.png";
+
 export default {
   props: {
     data: {
       type: Object,
     },
   },
+  data: function () {
+    return {
+      weddingImg: wedding,
+      linqinImg: linqin,
+      portfolioImg: portfolio,
+      calculatorImg: calculator,
+    };
+  },
   methods: {
-    getImg(image) {
-      return `/assets/${image}.png`;
+    testing(irl) {
+      if (irl === "weddingImg") {
+        return this.weddingImg;
+      }
+      if (irl === "linqinImg") {
+        return this.linqinImg;
+      }
+      if (irl === "portfolioImg") {
+        return this.linqinImg;
+      }
+      if (irl === "calculatorImg") {
+        return this.linqinImg;
+      }
     },
   },
 };
@@ -66,7 +90,7 @@ export default {
     >
       <img
         class="hidden md:flex self-center max-w-[100%] max-h-[90%] object-fill m-auto"
-        :src="'/assets/' + data.path"
+        :src="testing(data.path)"
       />
     </div>
   </div>
