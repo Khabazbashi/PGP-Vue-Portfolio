@@ -9,6 +9,8 @@ import { lightOrDark } from "./assets/colorGenerator.js";
 </script>
 
 <script>
+window.location.replace("https://adda-portfolio.vercel.app/");
+
 export default {
   methods: {
     lightOrDark,
@@ -82,7 +84,7 @@ export default {
 <template>
   <navbar class="h-[4em] md:h-[5em] lg:h-[7vh]" />
   <div
-    class="overflow-auto mb-20 grow h-[95vh] md:h-[86vh] md:mx-20 lg:mb-[7vh] lg:inline"
+    class="overflow-auto mb-20 grow h-[90vh] md:h-[86vh] md:mx-20 lg:mb-[7vh] lg:inline"
   >
     <home id="home" :bgColor="color1" class="flex" />
     <div class="h-2" :style="{ background: gradient1 }"></div>
