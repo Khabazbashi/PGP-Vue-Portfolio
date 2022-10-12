@@ -69,7 +69,7 @@ export default {
     >
       <img
         class="hidden md:flex self-center max-w-[100%] max-h-[90%] object-fill m-auto"
-        src="/assets/calculator.png"
+        src="@/assets/calculator.png"
       />
     </div>
   </div>
