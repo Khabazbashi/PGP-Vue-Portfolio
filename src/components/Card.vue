@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     getImg(image) {
-      return `/assets/${image}.png`;
+      return `../assets/${image}.png`;
     },
   },
 };
