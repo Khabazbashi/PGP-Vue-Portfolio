@@ -14,7 +14,7 @@
         0.587 * (g * g) +
         0.114 * (b * b) );
 
-        if (hsp<180) {
+        if (hsp<180 && hsp>40) {
         
             return color;
         } 
