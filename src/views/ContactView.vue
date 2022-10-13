@@ -22,10 +22,7 @@ export default {
 </script>
 
 <template>
-  <div
-    :style="{ 'background-color': bgColor }"
-    class="md:flex-row min-h-[100%] p-6 lg:p-16 justify-center items-center"
-  >
+  <div class="md:flex-row min-h-[100%] p-6 lg:p-16 justify-center items-center">
     <div class="md:w-[60%] grow">
       <h1 class="text-center text-5xl font-bold">Contact me</h1>
       <div class="flex flex-row justify-center mt-6 md:my-10">

@@ -18,10 +18,7 @@ export default {
 </script>
 
 <template>
-  <div
-    :style="{ 'background-color': bgColor }"
-    class="flex-col min-h-[100%] xl:p-16 p-6 items-center md:px-15"
-  >
+  <div class="flex-col min-h-[100%] xl:p-16 p-6 items-center md:px-15">
     <div class="flex flex-col items-center">
       <h1 class="text-5xl mt-20 mb-[10%] md:mb-[4%] font-bold">
         {{ projects.title }}

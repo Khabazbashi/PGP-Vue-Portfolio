@@ -20,10 +20,7 @@ export default {
 </script>
 
 <template>
-  <div
-    :style="{ 'background-color': bgColor }"
-    class="flex-col min-h-[100%] xl:p-16 p-6 items-center"
-  >
+  <div class="flex-col min-h-[100%] xl:p-16 p-6 items-center">
     <div>
       <div class="my-20 xl:w-[50%] m-auto">
         <h1 class="text-5xl md:mt-20 mb-8 font-bold text-center">

@@ -5,6 +5,12 @@ import home from "./views/HomeView.vue";
 import projects from "./views/ProjectsView.vue";
 import about from "./views/AboutView.vue";
 import { lightOrDark } from "./assets/colorGenerator.js";
+
+//TODO One size images
+//TODO Add scroll effect
+//TODO Improve responsiveness
+//TODO Use CMS for handling data (Sanity)
+//TODO Make page more dynamic
 </script>
 
 <script>
@@ -18,10 +24,10 @@ export default {
     gradient1() {
       return `linear-gradient(${this.color1}, ${this.color2})`;
     },
-    gradient2() {
+    gradient3() {
       return `linear-gradient(${this.color2}, ${this.color3})`;
     },
-    gradient3() {
+    gradient4() {
       return `linear-gradient(${this.color3}, ${this.color4})`;
     },
   },
@@ -83,14 +89,31 @@ export default {
 <template>
   <navbar class="h-[4em] md:h-[5em] lg:h-[7vh]" />
   <div
-    class="overflow-auto mb-20 grow h-[90vh] md:h-[86vh] md:mx-20 lg:mb-[7vh] lg:inline"
+    class="overflow-auto mb-20 grow h-[91vh] md:h-[86vh] md:mx-20 lg:mb-[7vh] lg:inline"
   >
-    <home id="home" :bgColor="color1" class="flex" />
-    <div class="h-2" :style="{ background: gradient1 }"></div>
-    <about id="about" :bgColor="color2" class="lg:flex" />
-    <div class="h-2" :style="{ background: gradient2 }"></div>
-    <projects id="projects" :bgColor="color3" class="lg:flex" />
-    <div class="h-2" :style="{ background: gradient3 }"></div>
-    <contact id="contact" :bgColor="color4" class="flex" />
+    <home
+      id="home"
+      :bgColor="color1"
+      class="flex"
+      :style="{ background: gradient1 }"
+    />
+    <about
+      id="about"
+      :bgColor="color2"
+      class="lg:flex"
+      :style="{ background: color2 }"
+    />
+    <projects
+      id="projects"
+      :bgColor="color3"
+      class="lg:flex"
+      :style="{ background: gradient3 }"
+    />
+    <contact
+      id="contact"
+      :bgColor="color4"
+      class="flex"
+      :style="{ background: gradient4 }"
+    />
   </div>
 </template>
