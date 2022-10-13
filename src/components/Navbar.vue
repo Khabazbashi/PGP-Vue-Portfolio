@@ -9,7 +9,7 @@ import { Slide } from "vue3-burger-menu";
 //TODO fix scroll up button
 
 <template>
-  <nav class="navbar flex flex-row text-black p-4 mx-auto w-full">
+  <nav class="navbar flex flex-row text-black md:p-4 md:w-full">
     <div class="flex relative bg-black">
       <Slide
         class="hamburger-menu grow lg:hidden"
