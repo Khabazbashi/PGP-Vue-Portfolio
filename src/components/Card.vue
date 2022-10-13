@@ -52,14 +52,14 @@ export default {
       <div
         class="flex flex-col"
         v-if="
-          !data.readMore || (!data.readMore && data.description.length > 300)
+          !data.readMore || (!data.readMore && data.description.length > 340)
         "
       >
-        <p class="text-lg md:text-lg">
-          {{ data.description.slice(0, 300) }}
-          <span v-if="data.description.length > 300">... </span>
+        <p class="text-lg">
+          {{ data.description.slice(0, 340) }}
+          <span v-if="data.description.length > 340">... </span>
           <button
-            v-if="data.description.length > 300"
+            v-if="data.description.length > 340"
             class="text-indigo-600 font-bold tracking-widest"
             @click="data.readMore = !data.readMore"
           >
@@ -70,13 +70,13 @@ export default {
 
       <div
         class="flex flex-col items-align justify-center"
-        v-if="data.readMore || data.description < 300"
+        v-if="data.readMore || data.description < 340"
       >
-        <p class="text-sm md:text-lg">
+        <p class="text-lg">
           {{ data.description }}
           <button
             class="text-indigo-600 font-bold tracking-widest"
-            v-if="!data.description < 300"
+            v-if="!data.description < 340"
             @click="data.readMore = !data.readMore"
           >
             READ LESS
